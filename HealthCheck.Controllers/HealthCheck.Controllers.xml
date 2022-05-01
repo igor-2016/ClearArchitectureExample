@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HealthCheck.Controllers</name>
+    </assembly>
+    <members>
+        <member name="T:HealthCheck.Controllers.Filters.Exceptions.ExpansionExceptionHandlerAttribute">
+            <summary>
+            Обработчик ошибок метода  WorkflowController
+            </summary>
+        </member>
+        <member name="M:HealthCheck.Controllers.HealthcheckController.CatalogPing(HealthCheck.Controllers.Catalog.Requests.CheckCatalogRequest,MediatR.IRequestHandler{HealthCheck.UseCases.Catalog.Queries.SimpleCatalogItems.CheckSimpleCatalogItemsQuery,ApplicationServices.Interfaces.Responses.DataResult{ECom.Entities.Models.CatalogInfo}},System.Threading.CancellationToken)">
+            <summary>
+            Вызов каталога товаров. 
+            Если не указывать ничего, то вернёт один товар из каталога если он есть (LagerId = 117) 
+            </summary>
+            <param name="lagerId"></param>
+            <param name="filialId"></param>
+            <param name="merchant">пока не используется</param>
+            <param name="deliveryType">(пока указывать 0!)</param>
+            <seealso href="https://temabit.atlassian.net/wiki/spaces/ECS/pages/889258075/ECom">Типы доставки ECom</seealso>
+            <returns></returns>
+        </member>
+        <member name="M:HealthCheck.Controllers.HealthcheckController.TestCreateOrderAndCollect(HealthCheck.Controllers.Order.Requests.CreateTestOrderAndCollectRequest,MediatR.IRequestHandler{HealthCheck.UseCases.Tests.CreateOrderAndCollect.CreateOrderAndCollectCommand,Expansion.Interfaces.Dto.CreateOrderAndCollectResponse},System.Threading.CancellationToken)">
+            <summary>
+            Тестовое создание ордера и его сборка
+            </summary>
+            <param name="testRequest"></param>
+            <param name="executeTestCaseHandler"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="P:HealthCheck.Controllers.Order.Requests.CreateTestOrderAndCollectRequest.CollectingType">
+            <summary>
+            Тип эмуляции сборки
+            </summary>
+        </member>
+        <member name="P:HealthCheck.Controllers.Order.Requests.CreateTestOrderAndCollectRequest.CollectingWithReplacementType">
+            <summary>
+            Первая сборка перед заменами
+            </summary>
+        </member>
+        <member name="P:HealthCheck.Controllers.Order.Requests.CreateTestOrderAndCollectRequest.ReplacementsType">
+            <summary>
+            Тип эмуляции генерации замен
+            </summary>
+        </member>
+        <member name="P:HealthCheck.Controllers.Order.Requests.CreateTestOrderAndCollectRequest.AcceptReplacementsType">
+            <summary>
+            Тип эмуляции подтверждения замен оператором
+            </summary>
+        </member>
+    </members>
+</doc>

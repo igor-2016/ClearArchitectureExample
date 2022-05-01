@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Entities</name>
+    </assembly>
+    <members>
+        <member name="F:Entities.DescribedErrors.NotFozzyShopOrder">
+            <summary>
+            Заказ не FozzyShop
+            </summary>
+        </member>
+        <member name="F:Entities.DescribedErrors.InvalidFozzyShopOrder">
+            <summary>
+            FozzyShop заказ не найден
+            </summary>
+        </member>
+        <member name="F:Entities.DescribedErrors.InvalidFozzyShopEnumConvertion">
+            <summary>
+            FozzyShop конвертация справочных данных
+            </summary>
+        </member>
+        <member name="F:Entities.DescribedErrors.InvalidFozzyShopInvalidStatus">
+            <summary>
+            FozzyShop статус не обрабатывается
+            </summary>
+        </member>
+        <member name="F:Entities.DescribedErrors.OneCollectingPerOrder">
+            <summary>
+            FozzyShop поддерживает одиночную сборку
+            </summary>
+        </member>
+        <member name="F:Entities.DescribedErrors.CollectingIsNotStarted">
+            <summary>
+            FozzyShop сборка не начата
+            </summary>
+        </member>
+        <member name="F:Entities.DescribedErrors.GlobalUserIdInnMappingNotFound">
+            <summary>
+            FozzyShop не найдено соответсвие между global user id и ИНН
+            </summary>
+        </member>
+        <member name="F:Entities.DescribedErrors.WrongOrderId">
+            <summary>
+            Ошибочный номер заказа Fozzy Shop
+            </summary>
+        </member>
+        <member name="P:Entities.DescribedException.ErrorId">
+            <summary>
+            Идентификатор ошибки для логирования
+            </summary>
+        </member>
+        <member name="T:Entities.Models.Collecting.Driver">
+            <summary>
+            Водитель
+            </summary>
+        </member>
+        <member name="P:Entities.Models.Collecting.Driver.Name">
+            <summary>
+            Имя водителя
+            </summary>
+        </member>
+        <member name="P:Entities.Models.Collecting.Driver.Inn">
+            <summary>
+            ИНН
+            </summary>
+        </member>
+        <member name="P:Entities.Models.Collecting.EComPicker.Id">
+            <summary>
+            Идентификатор пользователя
+            </summary>
+        </member>
+        <member name="P:Entities.Models.Collecting.EComPicker.Name">
+            <summary>
+            Имя сборщика
+            </summary>
+        </member>
+        <member name="T:Entities.Models.Collecting.Picker">
+            <summary>
+            Сборщик
+            </summary>
+        </member>
+        <member name="P:Entities.Models.Collecting.Picker.Id">
+            <summary>
+            Идентификатор пользователя
+            </summary>
+        </member>
+        <member name="P:Entities.Models.Collecting.Picker.Name">
+            <summary>
+            Имя сборщика
+            </summary>
+        </member>
+        <member name="P:Entities.Models.Collecting.Picker.Inn">
+            <summary>
+            ИНН сборщика
+            </summary>
+        </member>
+        <member name="T:Entities.Models.Expansion.Entity`1">
+            <summary>
+            Сущность
+            </summary>
+            <typeparam name="TId"></typeparam>
+        </member>
+        <member name="P:Entities.Models.Expansion.Entity`1.Id">
+            <summary>
+            Идентификатор сущности
+            </summary>
+        </member>
+        <member name="P:Entities.Models.Expansion.TraceableOrder.DeliveryId">
+            <summary>
+            Fozzy DeliveryType
+            </summary>
+        </member>
+        <member name="M:Entities.Models.Expansion.TraceableOrder.GetPicker">
+            <summary>
+            Сформировать сущность Сборщика
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Entities.Models.Expansion.TraceableOrder.GetDriver">
+            <summary>
+            Сформировать сущность Водителя
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Entities.Models.Expansion.TraceableOrderItem.GetPicker">
+            <summary>
+            Сформировать сущность Сборщика
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

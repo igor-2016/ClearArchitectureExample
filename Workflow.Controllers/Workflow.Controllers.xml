@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Workflow.Controllers</name>
+    </assembly>
+    <members>
+        <member name="T:Workflow.Controllers.Filters.Exceptions.WorkflowExceptionHandlerAttribute">
+            <summary>
+            Обработчик ошибок метода  WorkflowController
+            </summary>
+        </member>
+        <member name="M:Workflow.Controllers.WorkflowController.EnterCollecting(ECom.Entities.Models.FozzyCollectableOrderInfo,MediatR.IRequestHandler{Workflow.UseCases.Order.CreateOrderCommand,Entities.Models.Expansion.TraceableOrder},System.Threading.CancellationToken)">
+            <summary>
+            ECom.Workflow зовёт это после создания ордера в ECom
+            </summary>
+            <param name="orderInfo"></param>
+            <param name="requestHandler"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Workflow.Controllers.WorkflowController.CancelCollecting(System.Guid,MediatR.IRequestHandler{Workflow.UseCases.Order.CancelOrderCommand,Entities.Models.Expansion.TraceableOrder},System.Threading.CancellationToken)">
+            <summary>
+            Отмена сборки заказа (пока пустышка)
+            </summary>
+            <param name="basketGuid">Guid корзины/заказа для отмены</param>
+            <returns></returns>
+        </member>
+        <member name="M:Workflow.Controllers.WorkflowController.AcceptCollecting(System.Guid,ECom.Entities.Models.FozzyCollectableOrderInfo,MediatR.IRequestHandler{Workflow.UseCases.Order.AcceptReplacementsCommand,Entities.Models.Expansion.TraceableOrder},System.Threading.CancellationToken)">
+            <summary>
+            После согласования заказа оператор заполняет Qty для замен (а также может добавить новые позиции)  
+            и переводит заказ в состояние 915, подтверждая состав сборки (текущее состояние 914).
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Workflow.Controllers.WorkflowController.SendOrderToFozzyShopSite(System.Guid,System.Int32,MediatR.IRequestHandler{Workflow.UseCases.Order.SendOrderToFozzyShopSiteComand,Entities.Models.Collecting.OrderData},System.Threading.CancellationToken)">
+            <summary>
+            Оповестить веб сайт об измемениях (любых). Зовёт его ECom.Workflow
+            </summary>
+            <param name="basketGuid"></param>
+            <param name="newStatusId"></param>
+            <param name="requestHandler"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Workflow.Controllers.WorkflowController.SendOrderToFozzyShopColectingService(System.Guid,System.Int32,MediatR.IRequestHandler{Workflow.UseCases.Order.SendOrderToFozzyShopCollectingServiceComand,Entities.Models.Collecting.OrderData},System.Threading.CancellationToken)">
+            <summary>
+            Оповестить Collecting.Fozzy Web Service сайт об измемения (сборки). Зовёт его ECom.Workflow
+            </summary>
+            <param name="basketGuid"></param>
+            <param name="newStatusId"></param>
+            <param name="requestHandler"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

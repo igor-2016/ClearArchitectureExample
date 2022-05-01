@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Enums\CollectingItemState.cs" />
+    <Compile Remove="Enums\CollectOrderDeliveryType.cs" />
+    <Compile Remove="Enums\CollectOrderType.cs" />
+    <Compile Remove="Models\FzShopCollectingOrder.cs" />
+    <Compile Remove="Models\FzShopCollectingOrderItem.cs" />
+    <Compile Remove="Models\FzShopCollectItemView.cs" />
+    <Compile Remove="Models\FzShopCollectOrderView.cs" />
+    <Compile Remove="Models\Warning.cs" />
+    <Compile Remove="Requests\EComDoneCollectingRequest.cs" />
+    <Compile Remove="Requests\EComReconciliationCollectingRequest.cs" />
+    <Compile Remove="Requests\EComStartCollectingRequest.cs" />
+    <Compile Remove="Utils\DeliveryTypeExt.cs" />
+    <Compile Remove="Utils\OrderStateMappingExtention.cs" />
+    <Compile Remove="Utils\OrderViewExtensions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ECom.Entities\ECom.Entities.csproj" />
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+    <ProjectReference Include="..\Utils\Utils.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Attributes\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Models\" />
+    <Folder Include="Requests\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="EventHandlers\**" />
+    <EmbeddedResource Remove="EventHandlers\**" />
+    <None Remove="EventHandlers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="EComAndCollectOrderDifferenceCalculator.cs" />
+    <Compile Remove="FozzyShopAndCollectOrderDifferenceCalculator.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationServices.Interfaces\ApplicationServices.Interfaces.csproj" />
+    <ProjectReference Include="..\Basket.Interfaces\Basket.Interfaces.csproj" />
+    <ProjectReference Include="..\Catalog.Interfaces\Catalog.Interfaces.csproj" />
+    <ProjectReference Include="..\Collecting.Interfaces\Collecting.Interfaces.csproj" />
+    <ProjectReference Include="..\Workflow.Interfaces\Workflow.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ChangeTrackers\Order\Handlers\" />
+    <Folder Include="Options\" />
+  </ItemGroup>
+
+</Project>

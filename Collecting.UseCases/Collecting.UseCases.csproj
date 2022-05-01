@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Base\**" />
+    <Compile Remove="Order\Commands\Items\Check\**" />
+    <Compile Remove="Unchecked Commands\**" />
+    <Compile Remove="Utils\**" />
+    <Compile Remove="_Old\**" />
+    <EmbeddedResource Remove="Base\**" />
+    <EmbeddedResource Remove="Order\Commands\Items\Check\**" />
+    <EmbeddedResource Remove="Unchecked Commands\**" />
+    <EmbeddedResource Remove="Utils\**" />
+    <EmbeddedResource Remove="_Old\**" />
+    <None Remove="Base\**" />
+    <None Remove="Order\Commands\Items\Check\**" />
+    <None Remove="Unchecked Commands\**" />
+    <None Remove="Utils\**" />
+    <None Remove="_Old\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Catalog\Commands\OldExtractItemsCommand.cs" />
+    <Compile Remove="Catalog\Commands\OldLookupItemCommand.cs" />
+    <Compile Remove="Order\Commands\Items\AddItemCommand.cs" />
+    <Compile Remove="Order\Commands\Items\AddItemFromReplacementsCommand.cs" />
+    <Compile Remove="Order\Commands\Items\ChangeItemFromReplacementsCommand.cs" />
+    <Compile Remove="Order\Commands\Items\RemoveItemCommand.cs" />
+    <Compile Remove="Order\Commands\Items\RemoveItemFromReplacementsCommand.cs" />
+    <Compile Remove="Order\Commands\Items\SetPickedQtyCommand.cs" />
+    <Compile Remove="Order\Commands\Items\UpdateQtyCommand.cs" />
+    <Compile Remove="Order\Commands\NextLevel\UpdateQtyReplacementsCommand.cs" />
+    <Compile Remove="Order\Commands\Recalculate\FixLagerWeightCommand.cs" />
+    <Compile Remove="Order\Commands\Recalculate\UpdateOrderParamsCommand.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Base\CollectingCommandHandlerBase.cs" />
+    <Compile Include="Base\StartCollectingCommandHandlerBase.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationServices.Interfaces\ApplicationServices.Interfaces.csproj" />
+    <ProjectReference Include="..\Basket.Interfaces\Basket.Interfaces.csproj" />
+    <ProjectReference Include="..\Catalog.Interfaces\Catalog.Interfaces.csproj" />
+    <ProjectReference Include="..\Collecting.Interfaces\Collecting.Interfaces.csproj" />
+    <ProjectReference Include="..\DomainServices.Interfaces\DomainServices.Interfaces.csproj" />
+    <ProjectReference Include="..\Infrastructure.Interfaces\DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\Utils\Utils.csproj" />
+    <ProjectReference Include="..\Website.Interfaces\WebSiteService.Interfaces.csproj" />
+    <ProjectReference Include="..\Workflow.Interfaces\Workflow.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Catalog\Dto\" />
+    <Folder Include="Order\Commands\Items\" />
+    <Folder Include="Order\Commands\New\" />
+    <Folder Include="Order\Commands\Recalculate\" />
+    <Folder Include="Order\Queries\" />
+    <Folder Include="Order\Utils\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="10.0.1" />
+  </ItemGroup>
+
+</Project>

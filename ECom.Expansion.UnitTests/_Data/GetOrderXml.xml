@@ -1,0 +1,68 @@
+﻿<OrderData
+	xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<order>
+		<FzShopOrder>
+			<chequePrintDateTime/>
+			<clientFullName>Пётр Петрович Петров</clientFullName>
+			<clientMobilePhone>+380972222222</clientMobilePhone>
+			<clientMobilePhoneAlt1 i:nil="true"/>
+			<contragentFullName>contragent Full Name</contragentFullName>
+			<contragentOKPO>123456789</contragentOKPO>
+			<dateModified>14.02.2022 17:13:59</dateModified>
+			<deliveryAddress>Киев, Героїв Дніпра вулиця, 34, 1</deliveryAddress>
+			<deliveryDate>14.02.2022 0:00:00</deliveryDate>
+			<deliveryId>27</deliveryId>
+			<deliveryTimeFrom>18:53:00</deliveryTimeFrom>
+			<deliveryTimeTo>19:52:00</deliveryTimeTo>
+			<driverName>Не вказано</driverName>
+			<filialId>51</filialId>
+			<lastContainerBarcode/>
+			<logisticsType>Сухая | Не указан</logisticsType>
+			<megaContainerBarcodes i:nil="true"/>
+			<orderBarcode>39727718-e9a6-44b7-908b-336b0a8abc37</orderBarcode>
+			<orderCreated>14.02.2022 0:00:00</orderCreated>
+			<orderFrom>1</orderFrom>
+			<orderId>1061215</orderId>
+			<orderStatus>913</orderStatus>
+			<paymentId>89</paymentId>
+			<placesCount>0</placesCount>
+			<priority>355142420</priority>
+			<remark>постучать в дверь три раза</remark>
+			<rroNumber/>
+			<sumPaymentFromInternet>246,10000</sumPaymentFromInternet>
+			<sumPaymentFromKassa/>
+		</FzShopOrder>
+	</order>
+	<orderLines>
+		<FzShopOrderLines>
+			<AutoReplacements/>
+			<CustomParams>{"lineId":"1c914bae-2a3d-4a17-a28d-09f58c1c8c1b","basketGuid":"4c6b4a05-30fa-46fe-bdb2-9ce6d4541d3b","isWeighted":false}</CustomParams>
+			<IsActivityEnable>0</IsActivityEnable>
+			<dateModified>14.02.2022 17:13:59</dateModified>
+			<freezeStatus>232</freezeStatus>
+			<lagerId>117</lagerId>
+			<lagerName>Напиток Coca-Cola</lagerName>
+			<lagerUnit>2л</lagerUnit>
+			<orderId>1061215</orderId>
+			<orderQuantity>10,000</orderQuantity>
+			<priceOut>0,10000</priceOut>
+			<replacementLagers/>
+			<rowNum>1</rowNum>
+		</FzShopOrderLines>
+		<FzShopOrderLines>
+			<AutoReplacements/>
+			<CustomParams>{"lineId":"a613eb9d-0321-4fe6-a42c-bcc7187678c0","basketGuid":"4c6b4a05-30fa-46fe-bdb2-9ce6d4541d3b","isWeighted":false}</CustomParams>
+			<IsActivityEnable>0</IsActivityEnable>
+			<dateModified>14.02.2022 17:13:59</dateModified>
+			<freezeStatus>0</freezeStatus>
+			<lagerId>1285</lagerId>
+			<lagerName>Вино Teliany Valley МУКУЗАНИ красн. сух.</lagerName>
+			<lagerUnit>0,75л</lagerUnit>
+			<orderId>1061215</orderId>
+			<orderQuantity>2,000</orderQuantity>
+			<priceOut>28,93000</priceOut>
+			<replacementLagers/>
+			<rowNum>2</rowNum>
+		</FzShopOrderLines>
+	</orderLines>
+</OrderData>

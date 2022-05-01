@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Order\AcceptReplacements\NextLevel\Leafs\**" />
+    <EmbeddedResource Remove="Order\AcceptReplacements\NextLevel\Leafs\**" />
+    <None Remove="Order\AcceptReplacements\NextLevel\Leafs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Order\Dto\AcceptedCollectedItem.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationServices.Interfaces\ApplicationServices.Interfaces.csproj" />
+    <ProjectReference Include="..\Basket.Interfaces\Basket.Interfaces.csproj" />
+    <ProjectReference Include="..\Catalog.Interfaces\Catalog.Interfaces.csproj" />
+    <ProjectReference Include="..\Collecting.Interfaces\Collecting.Interfaces.csproj" />
+    <ProjectReference Include="..\DomainServices.Interfaces\DomainServices.Interfaces.csproj" />
+    <ProjectReference Include="..\Infrastructure.Interfaces\DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\Website.Interfaces\WebSiteService.Interfaces.csproj" />
+    <ProjectReference Include="..\Workflow.Interfaces\Workflow.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Order\Queries\" />
+    <Folder Include="Order\Utils\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="10.0.1" />
+  </ItemGroup>
+
+</Project>

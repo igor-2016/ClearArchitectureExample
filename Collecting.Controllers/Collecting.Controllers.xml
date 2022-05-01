@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Collecting.Controllers</name>
+    </assembly>
+    <members>
+        <member name="M:Collecting.Controllers.CollectingController.ChangeCollecting(Entities.Models.Collecting.OrderData,MediatR.IRequestHandler{Collecting.UseCases.LookupOrderByOrderNumberCommand,Entities.Models.Expansion.TraceableOrder},MediatR.IRequestHandler{Collecting.UseCases.AllChangesCommand,MediatR.Unit},System.Threading.CancellationToken)">
+            <summary>
+            Начинает сборку, предлагает замены, завершает сборку (другие изменения по ордеру)
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Collecting.Controllers.Filters.Exceptions.CollectingExceptionHandlerAttribute">
+            <summary>
+            Обработчик ошибок метода changeCollecting CollectController
+            </summary>
+        </member>
+    </members>
+</doc>

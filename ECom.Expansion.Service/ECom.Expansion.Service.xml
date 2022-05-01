@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ECom.Expansion.Service</name>
+    </assembly>
+    <members>
+        <member name="T:ECom.Expansion.WebApi.ExceptionMiddleware">
+            <summary>
+            Последний обработчик ошибок
+            </summary>
+        </member>
+        <member name="M:ECom.Expansion.WebApi.ExceptionMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Последняя надежда обработать ошибку
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECom.Expansion.Service.Utils.ApplicationBuilderExtension.UseCommonMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Подключение общих обработчиков 
+              - RequestGuid
+              - Logging
+              - ExceptionHandling
+              - Prometheus metrics server
+              - Prometheus http metrics
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

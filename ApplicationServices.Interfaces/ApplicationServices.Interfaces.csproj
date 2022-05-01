@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Exceptions\**" />
+    <Compile Remove="Queries\**" />
+    <EmbeddedResource Remove="Exceptions\**" />
+    <EmbeddedResource Remove="Queries\**" />
+    <None Remove="Exceptions\**" />
+    <None Remove="Queries\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="FozzyShopCollectValidationService.cs" />
+    <Compile Remove="IAcceptEComOrdersDifferenceOutput.cs" />
+    <Compile Remove="IEComAndCollectOrderDifferenceCalculator.cs" />
+    <Compile Remove="IFozzyShopAndCollectOrderDifferenceCalculator.cs" />
+    <Compile Remove="Requests\IAddItemCollectRequest.cs" />
+    <Compile Remove="Requests\IAddItemReplacementCollectRequest.cs" />
+    <Compile Remove="Requests\IChangeItemCollectReplacementRequest.cs" />
+    <Compile Remove="Requests\IRemoveItemCollectReplacementRequest.cs" />
+    <Compile Remove="Requests\IRemoveItemRequest.cs" />
+    <Compile Remove="Requests\ISetQtyRequest.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.0" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Basket.Interfaces\Basket.Interfaces.csproj" />
+    <ProjectReference Include="..\Collecting.Interfaces\Collecting.Interfaces.csproj" />
+    <ProjectReference Include="..\ECom.Entities\ECom.Entities.csproj" />
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+    <ProjectReference Include="..\Infrastructure.Interfaces\DataAccess.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

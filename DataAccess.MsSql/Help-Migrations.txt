@@ -1,0 +1,4 @@
+﻿
+Add-Migration Init -Project DataAccess.MsSql -StartupProject ECom.Expansion.Service -Context ReadOnlyAppDbContext
+update-database Init -Context ReadOnlyAppDbContext
+

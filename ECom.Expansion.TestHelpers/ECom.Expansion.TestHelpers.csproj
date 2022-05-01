@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.2-mauipre.1.22054.8" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationServices.Implementation\ApplicationServices.Implementation.csproj" />
+    <ProjectReference Include="..\Collecting.Interfaces\Collecting.Interfaces.csproj" />
+    <ProjectReference Include="..\DataAccess.MsSql\DataAccess.MsSql.csproj" />
+    <ProjectReference Include="..\DomainServices.Interfaces\DomainServices.Interfaces.csproj" />
+    <ProjectReference Include="..\ECom.Entities\ECom.Entities.csproj" />
+    <ProjectReference Include="..\Expansion.Interfaces\Expansion.Interfaces.csproj" />
+    <ProjectReference Include="..\HealthCheck.Controllers\HealthCheck.Controllers.csproj" />
+  </ItemGroup>
+
+</Project>

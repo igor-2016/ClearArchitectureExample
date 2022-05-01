@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ECom.Entities</name>
+    </assembly>
+    <members>
+        <member name="T:ECom.Entities.Models.CatalogInfo">
+            <summary>
+            Поиск товаров по LagerId
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogInfo.LagerId">
+            <summary>
+            Код товара
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogInfo.FilialId">
+            <summary>
+            Филиал
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogInfo.DeliveryType">
+            <summary>
+            Тип доставки в ECom
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogInfo.Merchant">
+            <summary>
+            Мерчант (пок не реализован!!)
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogInfo.BasketGuid">
+            <summary>
+            Код корзинки ECom (пока не используется)
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogInfo.Items">
+            <summary>
+            Список найденых товаров
+            </summary>
+        </member>
+        <member name="M:ECom.Entities.Models.CatalogInfo.GetSingleItem">
+            <summary>
+            Предполагается, что нашли в каталоге один товар по критериям поиска в идеале
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ECom.Entities.Models.CatalogItem">
+            <summary>
+            Информация о товаре из каталога
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogItem.Id">
+            <summary>
+            LagerId товара
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogItem.Name">
+            <summary>
+            Наименование товара
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogItem.Unit">
+            <summary>
+            Единица измерения
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogItem.NameForSite">
+            <summary>
+            Наименование товара для отображения на сайте
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogItem.FreezeStatus">
+            <summary>
+            Признак сухой, заморозка, охлождёнка (наименование)
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogItem.FreezeStatusId">
+            <summary>
+            Признак сухой, заморозка, охлождёнка... (код)
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogItem.IsWeighted">
+            <summary>
+            Товар весовой
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogItem.IsActivityEnable">
+            <summary>
+            Признак акционного товара
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogItem.IsCollectable">
+            <summary>
+            Может быть собран?
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogItem.SortingCategory">
+            <summary>
+            Категория для формирования RowNum присборке
+            </summary>
+        </member>
+        <member name="T:ECom.Entities.Models.CatalogItemPrices">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogItemPrices.Price">
+            <summary>
+            Текущая цена розницы
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogItemPrices.PriceOpt">
+            <summary>
+            Текущая оптовая цена 
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.CatalogItemPrices.PriceOld">
+            <summary>
+            Старая цена (опт или роз?)
+            </summary>
+        </member>
+        <member name="T:ECom.Entities.Models.AcceptedCollectedItem">
+            <summary>
+            старая посылка на ECom.Core через шину и новая через ECom.Workflow
+            </summary>
+        </member>
+        <member name="P:ECom.Entities.Models.AcceptedCollectedItem.OrderQty">
+            <summary>
+            Не хватает этого поля, убрать после обновления новых типов 
+            </summary>
+        </member>
+        <member name="T:Entities.Models.Workflow.NewAcceptedCollectedItem">
+            <summary>
+            Пока не используется
+            </summary>
+        </member>
+    </members>
+</doc>

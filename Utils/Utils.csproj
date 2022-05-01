@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Sys\INFRA.Files\**" />
+    <Compile Remove="Sys\RichHttpClient\Resources\**" />
+    <EmbeddedResource Remove="Sys\INFRA.Files\**" />
+    <EmbeddedResource Remove="Sys\RichHttpClient\Resources\**" />
+    <None Remove="Sys\INFRA.Files\**" />
+    <None Remove="Sys\RichHttpClient\Resources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Exceptions\BadRequestException.cs" />
+    <Compile Remove="Exceptions\ErrorModel.cs" />
+    <Compile Remove="Exceptions\ErrorModelException.cs" />
+    <Compile Remove="Exceptions\ForbiddenException.cs" />
+    <Compile Remove="Exceptions\NotFoundWithModelException.cs" />
+    <Compile Remove="Exceptions\UnauthorizedException.cs" />
+    <Compile Remove="Sys\RichHttpClient\Extensions\JObjectExtension.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+</Project>

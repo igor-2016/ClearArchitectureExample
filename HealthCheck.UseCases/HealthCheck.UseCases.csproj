@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Common\Queries\EntityQuery.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Queries\" />
+    <Folder Include="Database\Commands\" />
+    <Folder Include="Database\Utils\" />
+    <Folder Include="Dto\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.0" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationServices.Implementation\ApplicationServices.Implementation.csproj" />
+    <ProjectReference Include="..\ApplicationServices.Interfaces\ApplicationServices.Interfaces.csproj" />
+    <ProjectReference Include="..\Expansion.Interfaces\Expansion.Interfaces.csproj" />
+    <ProjectReference Include="..\Infrastructure.Interfaces\DataAccess.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

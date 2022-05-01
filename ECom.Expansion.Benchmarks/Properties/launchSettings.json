@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ECom.Expansion.Benchmarks": {
+      "commandName": "Project",
+      "commandLineArgs": "-f *"
+    }
+  }
+}
